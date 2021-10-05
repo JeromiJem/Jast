@@ -1,0 +1,6 @@
+var person = {
+	name: "Такой-то Антон Такойтович",
+	age: "29",
+	animals: "0";
+	expected salary: "450 000"
+}
