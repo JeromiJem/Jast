@@ -1,0 +1,40 @@
+1)  pwd
+2)  mkdir test_1
+3)  cd test_1
+4)  mkdir {test_11,test_22,test_33}
+5)  cd test_11
+6)  touch {t1.txt,t2.txt,t3.txt,j1.json,j2.json}
+7)  mkdir {ttest_11,ttest_22,ttest_33}
+8)  ls
+9)  vim t1.txt
+10) i
+11) 'esc' :wq 'enter'
+12) cd ..
+13) mv ./rr/{t3.txt,j2.json} ./rr/ff
+14) cp ./rr/{t2.txt,j1.json} ./rr/ttest_22
+15) find . -name "t3.txt"
+16) tail -f ./rr/t1.txt grep ./rr/t1.txt
+17) head -2 ./rr/t1.txt
+18) tail -2 ./rr/t1.txt
+19) less ./rr/t1.txt
+20) date
+1*) curl 'http://162.55.220.72:5005/get_method?name=Anton&age=29'
+2*) touch script
+    vim script
+
+	i
+
+	# !/bin/bash
+	cd D:/23_grop_anton/test_git/test_1
+	mkdir {t_1,t_2,t_3}
+	cd t_1
+	touch {t1.txt,t2.txt,t3.txt,j1.json,j2.json}
+	mkdir {ttest_11,ttest_22,ttest_33}
+	ls
+	mv ./t_1/{t3.txt,j2.json} ./t_1/ttest_11
+
+	'esc'
+	:wq
+	'enter'
+
+    ./script
