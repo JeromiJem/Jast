@@ -5,7 +5,7 @@ var person = {
 	"expected_salary": "450 000",
 	"favorite_movie": "Плохой санта",
 	"favorite_TV_show": "One puch man",
-	"favorite food": "роллы",
+	"favorite_food": "роллы",
 	"favorite_season": "лето",
 	"Country":"Англия"
 }
