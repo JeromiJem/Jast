@@ -18,7 +18,7 @@
 15. Добавить и закоммитить “new2.json” одной строчкой. 											git commit -a -m "new2.json"
 16. Отправить изменения на внешний репозиторий.												git push
 17. Отредактировать содержание файла “new2.xml” - написать информацию о себе. Всё написать в формате XML.				vim new2.xml
-18. Добавить и закоммитить “new2.xml” одной строчкой. 											git commit -a -m "new2.xml"
+18. Добавить и закоммитить “new2.xml” одной строчкой. 											git add new2.xml && git commit -m "new2.xml"
 19. Отправить изменения на внешний репозиторий.												git push
 20. Отправить предыдущее домашнее задание по GitBush Terminal на внешний репозиторий.							mv ./1dz_Linux.txt ./git_repo/Jast; git add 1dz_Linux.txt; git commit -a -m "1dz_Linux.txt"; git push
 21. В веб интерфейсе GitHub создать файл new3.txt.											Add file => Create new file
