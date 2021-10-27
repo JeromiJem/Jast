@@ -29,7 +29,7 @@ select * from students where name like '%Анна%';
 select * from students where name like '%8';
 
 --12. Вывести пользователей где в имени в есть буква а
-select * from students where name like '%а%';
+select * from students where name like '%а%' or name like 'а%' or name like '%а';
 
 --13. Вывести пользователей которые были созданы 2021-07-12 00:00:00
 select * from students where created_on = '2021-07-12 00:00:00';
