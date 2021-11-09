@@ -1,25 +1,48 @@
-1)  pwd
-2)  mkdir test_1
-3)  cd test_1
-4)  mkdir {test_11,test_22,test_33}
-5)  cd test_11
-6)  touch {t1.txt,t2.txt,t3.txt,j1.json,j2.json}
-7)  mkdir {ttest_11,ttest_22,ttest_33}
-8)  ls
-9)  vim t1.txt
-10) i
-11) 'esc' :wq 'enter'
-12) cd ..
-13) mv ./rr/{t3.txt,j2.json} ./rr/ff
-14) cp ./rr/{t2.txt,j1.json} ./rr/ttest_22
-15) find . -name "t3.txt"
-16) tail -f ./rr/t1.txt grep ./rr/t1.txt
-17) head -2 ./rr/t1.txt
-18) tail -2 ./rr/t1.txt
-19) less ./rr/t1.txt
-20) date
-1*) curl 'http://162.55.220.72:5005/get_method?name=Anton&age=29'
-2*) touch script
+1) Посмотреть где я
+pwd
+2) Создать папку
+mkdir test_1
+3) Зайти в папку
+cd test_1
+4) Создать 3 папки
+mkdir {test_11,test_22,test_33}
+5) Зайти в любоую папку
+cd test_11
+6) Создать 5 файлов (3 txt, 2 json)
+touch {t1.txt,t2.txt,t3.txt,j1.json,j2.json}
+7) Создать 3 папки
+mkdir {ttest_11,ttest_22,ttest_33}
+8) Вывести список содержимого папки
+ls
+9) + Открыть любой txt файл
+vim t1.txt
+10) + написать туда что-нибудь, любой текст
+i
+11) + сохранить и выйти
+'esc' :wq 'enter'
+12) Выйти из папки на уровень выше
+cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку
+mv ./rr/{t3.txt,j2.json} ./rr/ff
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку
+cp ./rr/{t2.txt,j1.json} ./rr/ttest_22
+15) Найти файл по имени
+find . -name "t3.txt"
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает
+tail -f ./rr/t1.txt grep ./rr/t1.txt
+17) вывести несколько первых строк из текстового файла
+head -2 ./rr/t1.txt
+18) вывести несколько последних строк из текстового файла
+tail -2 ./rr/t1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает
+less ./rr/t1.txt
+20) вывести дату и время
+date
+1*) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+curl 'http://162.55.220.72:5005/get_method?name=Anton&age=29'
+2*) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+    touch script
     vim script
 
 	i
